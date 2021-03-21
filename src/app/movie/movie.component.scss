@@ -18,6 +18,8 @@
     & .movie_poster {
       overflow: hidden;
       padding-bottom: 3rem;
+      margin-left: -1px;
+      margin-bottom: -1px;
 
       & img {
         object-fit: cover;
@@ -93,10 +95,10 @@
 
   &:hover {
     box-shadow: 0 8px 30px 0 #1f1f1f99;
-    transform: scale(1.01);
+    transform: scale3d(1.01, 1.01, 1.01);
   }
 
   &:hover .movie_poster img {
-    transform: scale(1.03);
+    transform: scale3d(1.01, 1.01, 1.01);
   }
 }

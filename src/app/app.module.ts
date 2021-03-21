@@ -5,7 +5,7 @@ import { AppRoutingModule, RoutingComponent } from './app-routing.module';
 import { DataServices } from './services/data.services';
 import { FormsModule } from '@angular/forms';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
-import { NbIconModule } from '@nebular/theme';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {
   NbLayoutModule,
@@ -17,12 +17,15 @@ import {
   NbActionsModule,
   NbButtonGroupModule,
   NbFormFieldModule,
+  NbIconModule,
+  NbToastrModule,
 } from '@nebular/theme';
 
 @NgModule({
   declarations: [AppComponent, RoutingComponent],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     NbThemeModule.forRoot({ name: 'movieTheme' }),
     NbLayoutModule,
     AppRoutingModule,
@@ -36,6 +39,7 @@ import {
     NbButtonGroupModule,
     NbEvaIconsModule,
     NbFormFieldModule,
+    NbToastrModule.forRoot(),
   ],
   providers: [DataServices],
   bootstrap: [AppComponent],

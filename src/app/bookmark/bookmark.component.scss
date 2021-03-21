@@ -100,3 +100,23 @@
     transform: scale(1.03);
   }
 }
+
+.bookmark_title {
+  & h4 {
+    color: #fff;
+  }
+}
+
+.bookmark_image {
+  & img {
+    width: 26rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .bookmark_image {
+    & img {
+      width: 100%;
+    }
+  }
+}
