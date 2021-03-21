@@ -1,0 +1,27 @@
+<nb-card class="search_card_container">
+  <nb-card-body>
+    <div class="search_container">
+      <div class="search_title"><p>Search for your favourite movie!</p></div>
+
+      <div class="search_input">
+        <nb-form-field>
+          <nb-icon nbPrefix icon="search-outline" pack="eva"></nb-icon>
+          <input
+            [(ngModel)]="searchTitle"
+            type="text"
+            nbInput
+            placeholder="Search"
+            type="text"
+            nbInput
+            placeholder="Search for movie..."
+          />
+        </nb-form-field>
+        <div class="search_btn">
+          <button (click)="searchMovie(searchTitle)" nbButton>Search</button>
+        </div>
+      </div>
+    </div>
+  </nb-card-body>
+</nb-card>
+
+<app-movie [moviedata]="movieList"></app-movie>

@@ -1,0 +1,21 @@
+@import "~@nebular/theme/styles/theming";
+@import "~@nebular/theme/styles/themes/default";
+
+$nb-themes: nb-register-theme(
+  (
+    //layout config
+    layout-background-color: #2a2e43,
+    //Navbar config
+    header-background-color: #202333,
+    header-shadow: none,
+    header-text-color: #fff,
+    //footer config
+    footer-background-color: #202333,
+    footer-text-color: #fff,
+    footer-height: 0.2rem,
+    footer-padding: 0.2rem,
+    footer-divider-color: #202333
+  ),
+  movieTheme,
+  default
+);
