@@ -16,6 +16,20 @@ export class BookmarkComponent implements OnInit {
     }
   }
 
+  deleteItem(item) {
+    let index;
+    index = this.bookmarks.findIndex(
+      (element) => element.imdbID === item.imdbID
+    );
+    if (index > -1) {
+      this.bookmarks.splice(index, 1);
+      localStorage.setItem('bookmarks', JSON.stringify(this.bookmarks));
+      return;
+    } else {
+      console.log('not found');
+    }
+  }
+
   constructor() {}
 
   ngOnInit(): void {

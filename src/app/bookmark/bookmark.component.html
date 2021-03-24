@@ -8,6 +8,14 @@
               <img src="{{ bookmark.Poster }}" alt="{{ bookmark.Title }}" />
             </div>
             <div class="movie_content_container">
+              <button
+                nbButton
+                class="delete_icon"
+                (click)="deleteItem(bookmark)"
+                status="danger"
+              >
+                Delete
+              </button>
               <div class="movie_title">
                 <p class="title_label">Title</p>
                 <p>{{ bookmark.Title }}</p>

@@ -28,7 +28,7 @@
         height: 25rem;
         border-top-right-radius: 0.2rem;
         border-top-left-radius: 0.2rem;
-        transition: all 0.4s ease-in-out;
+        transition: all 0.2s ease;
       }
     }
 
@@ -95,10 +95,13 @@
 
   &:hover {
     box-shadow: 0 8px 30px 0 #1f1f1f99;
-    transform: scale3d(1.01, 1.01, 1.01);
   }
 
   &:hover .movie_poster img {
-    transform: scale3d(1.01, 1.01, 1.01);
+    transform: scale(1.06);
   }
+}
+
+.active {
+  color: rgb(102, 255, 0) !important;
 }

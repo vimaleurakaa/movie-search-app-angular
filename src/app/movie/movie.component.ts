@@ -46,6 +46,7 @@ export class MovieComponent implements OnInit {
   }
 
   getBookmarks(movie) {
+    movie.active = !movie.active;
     const getBookmarks = JSON.parse(localStorage.getItem('bookmarks'));
     let foundAtPos = -1;
 
@@ -71,8 +72,6 @@ export class MovieComponent implements OnInit {
       }
     }
   }
-
-  //thats heavy, probably more than 200mb
 
   @Input() moviedata;
 
